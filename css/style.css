@@ -1,0 +1,393 @@
+h1,h2,h3,h4,h5,h6,p,ul{
+    margin: 0;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+a{
+    text-decoration: none !important;
+}
+body{
+    font-family: 'Quicksand';
+    font-weight: 500;
+}
+.header{
+    background: url(../images/banner.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+h1{
+    font-size: 70px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;     
+}
+
+.intro__text{
+ font-size: 18px;
+ font-weight: 400;
+ color: #fff;
+ max-width: 600px;
+ text-align: center;
+ margin: auto;  
+}
+
+.intro{
+    padding: 160px 0; 
+ }
+ 
+
+.header__arrow_type{
+    color: #fff;
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+.header__arrow{
+    display: flex;
+    justify-content: center;
+}
+
+.nav__link{
+    color: white;
+    font-size: 18px;
+    padding: 0 30px;
+}
+
+.navbar__nav{
+    display: inline-flex;
+}
+
+.navbar{
+    padding-top: 30px;
+}
+
+.nav__link:hover{
+    color: #ffe637;
+    text-decoration: none;
+}
+
+.card__btn{
+    color: #fff;
+    font-size: 36px;
+}
+
+.card__btn:hover{
+    color: #ffe637;
+}
+
+.filter__btn{
+    color: #fff;
+    background: #aa9b77;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 16px 32px;
+    border-radius: 4px;
+    border: none;
+}
+
+.filter__btn:hover{
+    text-decoration: underline;
+}
+.filter__btn:focus{
+    outline: none;
+}
+
+.filter{
+    padding: 46px 0;
+    background: #f5f6f7;
+}
+
+.filter__item{
+    margin-right: 20px;
+}
+
+/* check box */
+
+.checkbox input[type="checkbox"] {
+    opacity: 0;
+}
+
+.checkbox label {
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    padding-left: 38px;
+    cursor: pointer;
+}
+
+.checkbox label::before,
+.checkbox label::after {
+    position: absolute;
+    content: "";
+    
+    /*Needed for the line-height to take effect*/
+    display: inline-block;
+}
+
+/*Outer box of the fake checkbox*/
+.checkbox label::before{
+    height: 26px;
+    width: 26px;
+    border-radius: 4px;
+    border: 2px solid #cccccc;
+    left: 0;
+    background: #fff; 
+    cursor: pointer; 
+}
+
+/*Checkmark of the fake checkbox*/
+.checkbox label::after {
+    height: 18px;
+    width: 10px;
+    border-left: 3px solid #aa9b78;
+    border-bottom: 3px solid #aa9b78;  
+    transform: rotate(-45deg);   
+    left: 8px;
+    top: 2px;
+}
+
+/*Hide the checkmark by default*/
+.checkbox input[type="checkbox"] + label::after {
+    content: none;
+}
+
+/*Unhide on the checked state*/
+.checkbox input[type="checkbox"]:checked + label::after {
+    content: "";
+}
+
+/* Adding focus styles on the outer-box of the fake checkbox */
+.checkbox input[type="checkbox"]:focus + label::before {
+    border: 3px solid #aa9b77;
+    background: #fff;
+}
+
+.checkbox{
+    display: flex;
+    align-items: center;
+}
+
+.line{
+    width: 1024px;
+    height: 2px;
+    background: #aa9b77;
+}
+
+.catalog__container:last-child{
+    margin-bottom: 130px;
+}
+
+.category{
+    display: inline-flex;
+    align-items: center;
+    padding: 80px 0;
+}
+
+.category__men{
+    margin-right: 30px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+}
+.category__women{
+    margin-left: 30px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.catalog-slider__item{
+    background: #dedede;    
+    width: 320px !important;
+    padding: 10px 26px;
+    margin: 0 auto;
+}
+
+.catalog-slider img{
+    display: flex;
+    margin: 0 auto;
+    padding: 30px;
+    height: 240px;
+}
+
+.catalog-slider .form-control{
+    background: none;
+    width: 65px;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 0;
+    padding: 0;
+
+}
+
+.catalog-slider .form-control:focus,
+.catalog__item_name a:focus{
+    box-shadow: none;
+    outline: none;
+}
+
+.catalog__item_name a:hover{
+    color: #424242;
+}
+
+.catalog__item_name a{
+    text-transform: uppercase;
+    color: #aa9b77;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.catalog__item_price{
+    font-size: 18px;
+    color: #424242;
+}
+
+.catalog__item_details{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* arrows */
+
+.left, .next{
+    background: none;
+    border: none;
+    color: #aa9b77;
+    font-size: 20px;
+    position: absolute;
+}
+
+.catalog-slider{
+    position: relative;
+    z-index: 0;
+}
+
+.next{
+    top: -40px;
+    right: 0;
+}
+.left{
+    right: 20px;
+    z-index: 2;
+    top: -40px;
+}
+
+
+
+/* about */
+.about{
+    background: #aa9b77;
+    padding: 50px 180PX;
+}
+
+.container__about{
+    border: 2px solid #918363;
+    width: 710px;
+    padding: 70px 100px;
+    position: relative;
+}
+
+.about__text{
+   text-align: center;
+   font-family: 'Quicksand';
+   font-weight: 700;
+   line-height: 25px;
+}
+
+ .about__title{
+    text-transform: uppercase;
+    color: #837659;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 700;
+    position: absolute;
+    top: -16px;
+    transform: translateX(160%);
+    background: #aa9b77;
+    padding: 0 12px;
+}
+
+/* footer */
+
+.footer__social{
+    background: #535253;
+    padding: 22px 0;
+}
+
+.footer__social_text{
+    font-size: 18px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.footer__social_text .fa{
+    font-size: 30px;
+    color: #424242;
+    margin-right: 20px;
+}
+
+.footer__main{
+    background: #424242;
+    padding: 70px 0;
+}
+
+.footer__logo{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer__text{
+    width: 320px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 11px;
+    line-height: 24px;
+}
+
+.footer__main_content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer__link{
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0 12px;
+    border-right: 2px solid #837659;
+}
+
+.footer__link_last{
+    border-right: 0;
+    padding-right: 0;
+}
+
+.footer__link:hover{
+    color: #aa9b77;
+}
+
+.footer__copyright{
+    font-size: 18px;
+    color: #fff;
+    text-align: right;
+    margin-top: 8px;
+}
